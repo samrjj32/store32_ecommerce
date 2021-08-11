@@ -1,0 +1,31 @@
+.trending-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trending-category {
+  // display: flex;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.round-menu {
+  margin-left: 20px;
+
+  .cat-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px 0;
+  }
+
+  .cat-name {
+    color: #707070;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+}

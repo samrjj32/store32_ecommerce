@@ -1,0 +1,40 @@
+.checkbox-sec {
+  display: flex;
+  align-items: center;
+}
+
+.product_Image {
+  // min-width: 100%;
+
+  img {
+    max-width: 150px;
+    object-fit: cover;
+  }
+}
+
+.pagination {
+  ul {
+    display: flex;
+    padding: 0px;
+  }
+
+  li {
+    list-style: none;
+    // margin-left: 10px;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    // transition: background-color 0.3s;
+    border: 1px solid #ddd;
+  }
+
+  li:hover {
+    background-color: #ddd;
+  }
+  li.active {
+    background-color: #000000;
+    color: white;
+    border: 1px solid #000000;
+  }
+}

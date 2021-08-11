@@ -1,0 +1,44 @@
+.banner {
+  // width: 700px;
+  padding: 5px;
+
+  .banner-content {
+    height: 400px;
+    // width: 700px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #95c6d9;
+    // background-image: url(https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+  }
+
+  .banner-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+
+    p {
+      // font-size: 28px;
+      margin: 0;
+    }
+
+    h3 {
+      // font-size: 90px;
+      margin: 0;
+    }
+
+    .banner-button {
+      background: #fff;
+      border-color: #fff;
+      color: #222;
+      padding: 8px 12px;
+      line-height: 1.45;
+      font-size: 1.1rem;
+    }
+  }
+}
+

@@ -1,0 +1,32 @@
+.cart-item {
+  padding: 10px 20px 10px 30px;
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: space-between;
+
+  .details {
+    display: flex;
+
+    .details-section {
+      padding-left: 20px;
+
+      .in-details {
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 300px;
+
+        li {
+          margin-right: 10px;
+          display: flex;
+
+          span {
+            width: 60px;
+          }
+        }
+      }
+    }
+  }
+}

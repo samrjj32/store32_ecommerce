@@ -66,7 +66,7 @@ function Tests() {
         }}
       >
         <p> id : {user.id}</p>
-        <p> username : {user.username}</p>
+        <p> name : {user.username}</p>
         <p> email: {user.email}</p>
       </div>
 

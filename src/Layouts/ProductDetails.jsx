@@ -104,9 +104,9 @@ function ProductDetails(props) {
                   details.url,
                 ].map((item, i) => {
                   return (
-                    <Grid item xs={2} sm={2} md={2}>
+                    // <Grid item xs={2} sm={2} md={2}>
                       <Thumbnails key={i} url={item} />
-                    </Grid>
+                    // </Grid>
                   );
                 })}
               </Grid>

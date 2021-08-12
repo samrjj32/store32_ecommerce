@@ -38,11 +38,33 @@
           justify-content: space-between;
 }
 
+.navbar .nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .navbar .nav-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-right: 10px;
+}
+
+.navbar .nav-right .cart-count {
+  position: absolute;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  right: 5px;
+  top: 5px;
+  text-align: center;
+  min-width: 16px;
 }
 
 .navbar a {
@@ -71,16 +93,15 @@
   letter-spacing: 0;
 }
 
-.navbar .cart-count {
-  position: absolute;
-  background-color: red;
-  color: white;
-  border-radius: 50%;
-  font-size: 14px;
-  right: 5px;
-  top: 5px;
-  text-align: center;
-  min-width: 16px;
+.navbar .burger-menu div {
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  margin: 5px;
+}
+
+.navbar .burger-menu {
+  display: none;
 }
 
 .sticky {
@@ -92,6 +113,52 @@
   width: 100%;
   z-index: 1000;
   padding: 20px 0px 20px 0px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar .nav-left {
+    width: 30%;
+  }
+  .navbar .nav-bottom {
+    display: none;
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    background-color: inherit;
+    top: 8vh;
+  }
+  .navbar .nav-bottom ul {
+    height: 92vh;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar .nav-bottom li {
+    font-size: 16px;
+    letter-spacing: 0;
+    height: 60px;
+  }
+  .navbar .burger-menu {
+    display: block;
+  }
+  .burger-active {
+    display: block !important;
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
 }
 
 .banner {
@@ -337,6 +404,10 @@
   background-color: #000000;
   color: white;
   border: 1px solid #000000;
+}
+
+.thumb {
+  margin-right: 10px;
 }
 
 .filter-section {

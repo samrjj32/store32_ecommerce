@@ -9,13 +9,29 @@ import { AddToCartContext } from "../Context/cartContext";
 function Header() {
   const cartValue = useContext(AddToCartContext);
 
+  console.log(cartValue, "hi");
 
-   console.log(cartValue,"hi")
+  const showMenu = () => {
+    const burger = document.querySelector('.burger-menu');
+    const nav = document.querySelector('.nav-bottom');
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('burger-active');
+    });
+    console.log(burger)
+  };
+ 
+  console.log(document.querySelector('.burger-menu'))
 
   return (
     <div className="navbar" id="nav">
       <div className="nav-top">
         <div className="nav-left">
+        <div className="burger-menu" onClick={showMenu}>
+          <div className="one"></div>
+          <div className="two"></div>
+          <div className="three"></div>
+        </div>
           <Link to="/">
             <li>store 32</li>
           </Link>
@@ -32,9 +48,10 @@ function Header() {
             <Link to="/cart">
               <ShoppingCartOutlinedIcon />
             </Link>
-            <span className="cart-count">{cartValue.cartItems.length}</span>
+            {/* <span className="cart-count">{cartValue.cartItems.length}</span> */}
           </li>
         </div>
+      
       </div>
       <div className="nav-bottom">
         <ul>
